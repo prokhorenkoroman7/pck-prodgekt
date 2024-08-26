@@ -13,6 +13,7 @@ body{
 }
 h2,h3,h4 {
     color: #212121;
+    margin: 0;
 }
 ul{
     list-style: none;
@@ -22,11 +23,109 @@ a{
     text-decoration: none;
     font-style: normal;
 }
-.conteiner {
+.container {
     width:1200px;
     padding:0 15px;
     margin-left:auto;
     margin-right:auto;
 }
-
-
+/*header*/
+header{
+    display: flex;
+    align-items: center;
+    height: 80 px;
+    border-bottom: solid 1px #ECECEC;
+}
+    .header-wrapper
+        {display: flex;
+         align-items: center;   
+    }
+    .header-nav{
+margin-left: 30px;
+    }
+    .nav-list{
+        display: flex;
+    }
+    .nav-item:hover{
+        color:var(--brand-color) ; 
+    }
+    .nav-item{
+        margin-left: 50px;
+        color: #212121;
+    }
+    .nav-item:first-child{
+        margin: 0;
+    }
+    .nav-link{
+        color:inherit;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+    }
+   .header-address{
+    margin-left: auto;
+   }
+   .address-link{
+    color: #757575;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;
+   }
+   .address-link.tel{
+    margin-left: 50px;
+   }
+   .address-link:hover{
+    color:var(--brand-color) ; 
+}
+/*hero-sektions*/
+.hero-section{
+    background-image:linear-gradient(rgba(47, 48, 58, 0.40),
+    rgba(47, 48, 58, 0.40)),
+     url(./images/Hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+height: 600px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 0 auto;
+align-items: center;
+}
+.hero-title{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px; /* 136.364% */
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    max-width: 700px;
+}
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    color: #FFF;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+border-radius: 4px;
+background-color: var(--brand-color);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+margin-top: 30px;
+border: none;
+cursor: pointer;
+}
